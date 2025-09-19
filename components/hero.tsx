@@ -19,7 +19,7 @@ export function Hero() {
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                 Telas mosquiteiras de alta qualidade que protegem contra insetos, mosquitos, baratas e poeira. Material
-                resistente e fácil limpeza para o conforto da sua família.
+                resistente e fácil limpeza para o conforto da sua <b>família</b> e higiene da sua <b>industria</b> e <b>negócio</b>.
               </p>
             </div>
 

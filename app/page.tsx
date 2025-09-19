@@ -5,9 +5,10 @@ import { Products } from "@/components/products"
 import { Testimonials } from "@/components/testemunhas"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
-import { Budget } from "@/components/budget"
 import { ProductCatalog } from "@/components/product-catalog"
 import { Gallery } from "@/components/gallery"
+import { Faq } from "@/components/faq"; // importe o componente
+
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
       <Products />
       <ProductCatalog />
       <Gallery />
-      <Budget />
       <Testimonials />
+      <Faq />
       <Contact />
       <Footer />
     </main>

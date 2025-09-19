@@ -19,8 +19,8 @@ const features = [
   },
   {
     icon: Wrench,
-    title: "Instalação Profissional",
-    description: "Equipe especializada garante instalação perfeita e duradoura.",
+    title: "Promove higiene para negócios",
+    description: "Garante a higiene de ambientes com trabalho pesado",
   },
 ]
 

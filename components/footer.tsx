@@ -6,12 +6,23 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
+            {/* Bloco do Logo */}
             <div className="flex items-center space-x-2">
+              {/* REMOVIDO: O div placeholder do logo
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 border-2 border-background rounded opacity-80"></div>
               </div>
+              */}
+              
+              {/* ADICIONADO AQUI 👇 */}
+              <img
+                src="/logo.png" // <-- TROQUE "sua-logo.png" PELO NOME DO SEU ARQUIVO DE LOGO
+                alt="Logo da DG Telas"
+                className="w-8 h-8 object-contain" // Mantém o tamanho e evita distorção
+              />
+
               <div>
-                <h3 className="text-lg font-bold">TelaSegura JP</h3>
+                <h3 className="text-lg font-bold">DG Telas</h3>
                 <p className="text-sm opacity-80">Proteção para sua casa</p>
               </div>
             </div>

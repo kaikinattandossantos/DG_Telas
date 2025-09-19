@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge" // Não está sendo usado, pode remover se quiser
 import { Palette, Layers, Shield, Sparkles } from "lucide-react"
 
 export function ProductCatalog() {
@@ -26,73 +26,75 @@ export function ProductCatalog() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {/* Fibra de Vidro */}
-          <Card className="border-primary/20">
-            <CardHeader className="text-center">
+        {/* Seção principal dos produtos: Tela e Perfil */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto"> {/* Ajustado para 2 colunas e centralizado */}
+          {/* Fibra de Vidro Card */}
+          <Card className="flex flex-col"> {/* Adicionado flex para organizar conteúdo */}
+            <CardHeader className="text-center flex-grow"> {/* flex-grow para ocupar espaço */}
+              <div className="relative h-100 w-full mb-4">
+                {/* Imagem da tela */}
+                <img
+                  src="/telamosquiteira.png" // URL da Image 1
+                  alt="Tela de Fibra de Vidro"
+                  className="object-cover w-full h-full rounded-t-lg" // Usar rounded-t-lg para bordas superiores
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> {/* Overlay sutil */}
+              </div>
               <Shield className="h-12 w-12 text-primary mx-auto mb-2" />
               <CardTitle>Tela de Fibra de Vidro</CardTitle>
               <CardDescription>Material principal das nossas telas</CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
+            <CardContent className="flex-grow flex flex-col justify-between"> {/* flex-grow e justify-between */}
+              <div className="space-y-3 mb-4"> {/* Adicionado mb-4 para espaçamento */}
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Resistente a rasgos</span>
+                  <span className="text-sm">Antimofo</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Fácil limpeza</span>
+                  <span className="text-sm">Não propaga o fogo</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Não deforma</span>
+                  <span className="text-sm">Atóxica e Antialérgica</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Proteção UV</span>
+                  <span className="text-sm">Imperceptível</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 bg-primary rounded-full"></div>
+                  <span className="text-sm">Resistente a rasgos e fácil limpeza</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 bg-primary rounded-full"></div>
+                  <span className="text-sm">Não deforma e proteção UV</span>
                 </div>
               </div>
-              <div className="mt-4 p-3 bg-primary/10 rounded-lg">
-                <p className="text-sm font-medium text-primary text-center">✨ Material Premium de Fibra de Vidro</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Tipos de Tela */}
-          <Card>
-            <CardHeader className="text-center">
-              <Sparkles className="h-12 w-12 text-primary mx-auto mb-2" />
-              <CardTitle>Tipos Disponíveis</CardTitle>
-              <CardDescription>Escolha o modelo ideal</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="p-3 border rounded-lg">
-                <h4 className="font-medium mb-2">Tela de Encaixe</h4>
-                <p className="text-sm text-muted-foreground">Removível, ideal para limpeza frequente</p>
-                <Badge variant="secondary" className="mt-2">
-                  Mais Popular
-                </Badge>
-              </div>
-              <div className="p-3 border rounded-lg">
-                <h4 className="font-medium mb-2">Tela Fixa</h4>
-                <p className="text-sm text-muted-foreground">Instalação permanente, máxima segurança</p>
-                <Badge variant="outline" className="mt-2">
-                  Mais Segura
-                </Badge>
+              <div className="p-3 bg-primary/10 rounded-lg">
+                <p className="text-sm font-medium text-primary text-center">✨ Malha Premium de Fibra de Vidro</p>
               </div>
             </CardContent>
           </Card>
 
-          {/* Perfil de Alumínio */}
-          <Card>
-            <CardHeader className="text-center">
+          {/* Perfil de Alumínio Card */}
+          <Card className="flex flex-col"> {/* Adicionado flex para organizar conteúdo */}
+            <CardHeader className="text-center flex-grow"> {/* flex-grow para ocupar espaço */}
+              <div className="relative h-100 w-full mb-4">
+                {/* Imagem do perfil de alumínio */}
+                <img
+                  src="/perfildealuminio.png" // URL da Image 2 - Substitua por <img> da Image 2
+                  alt="Perfil de Alumínio"
+                  className="object-cover w-full h-full rounded-t-lg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> {/* Overlay sutil */}
+              </div>
               <Palette className="h-12 w-12 text-primary mx-auto mb-2" />
               <CardTitle>Perfil de Alumínio</CardTitle>
               <CardDescription>Estrutura resistente e durável</CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
+            <CardContent className="flex-grow flex flex-col justify-between"> {/* flex-grow e justify-between */}
+              <div className="space-y-3 mb-4">
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-primary rounded-full"></div>
                   <span className="text-sm">Não enferruja</span>
@@ -110,12 +112,17 @@ export function ProductCatalog() {
                   <span className="text-sm">Fácil manutenção</span>
                 </div>
               </div>
+              <div className="p-3 bg-muted rounded-lg"> {/* Alterado para bg-muted para distinção */}
+                <p className="text-sm text-center text-muted-foreground">
+                  Alumínio de alta qualidade para maior vida útil.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
 
         {/* Cores Disponíveis */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"> {/* Centralizado */}
           {/* Cores do Alumínio */}
           <Card>
             <CardHeader>
@@ -164,12 +171,11 @@ export function ProductCatalog() {
 
               <div className="mt-6 p-4 bg-muted rounded-lg">
                 <div className="flex items-start gap-3">
-                  <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <Sparkles className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" /> {/* Ícone alterado para Sparkles */}
                   <div>
-                    <p className="font-medium text-sm">Fibra de Vidro Premium</p>
+                    <p className="font-medium text-sm">Qualidade Superior</p> {/* Título ajustado */}
                     <p className="text-xs text-muted-foreground mt-1">
-                      Todas as nossas telas são feitas com fibra de vidro de alta qualidade, garantindo durabilidade e
-                      resistência superior.
+                      Nossas telas são desenvolvidas para oferecer máxima proteção e durabilidade.
                     </p>
                   </div>
                 </div>
