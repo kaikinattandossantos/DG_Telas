@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Check, ArrowRight } from "lucide-react";
 
 export function Contact() {
-  const numeroWhatsapp = "5581997631971"; // Seu número
+  const numeroWhatsapp = "558388109483"; // Seu número
 
   const [nome, setNome] = useState("");
   const [telefone, setTelefone] = useState("");
@@ -58,7 +58,7 @@ export function Contact() {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">(81) 99763-1971</p>
+                      <p className="font-semibold text-foreground">(83) 88109483</p>
                       <p className="text-primary font-medium">Chamar no WhatsApp</p>
                     </div>
                   </div>

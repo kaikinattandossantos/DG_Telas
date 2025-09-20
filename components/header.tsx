@@ -13,9 +13,9 @@ export function Header() {
           <div className="flex items-center space-x-2">
 
             <img
-              src="/logo.png" // <-- TROQUE "sua-logo.png" PELO NOME DO SEU ARQUIVO
+              src="/logo.png" 
               alt="Logo da DG Telas"
-              className="w-10 h-10 object-contain" // Mantém o tamanho e evita distorção da imagem
+              className="w-10 h-10 object-contain" 
             />
 
             <div>
@@ -55,7 +55,7 @@ export function Header() {
                 className="flex items-center space-x-1 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span>(81) 99763-1971</span>
+                <span>(83) 8810-9483</span>
               </a>
             </div>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">

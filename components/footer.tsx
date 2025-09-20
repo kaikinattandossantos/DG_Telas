@@ -36,7 +36,7 @@ export function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span>(83) 9999-9999</span>
+                <span>(83) 8810-9483</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
